@@ -1,0 +1,19 @@
+name: ExampleWriteAddon
+description: $description
+prefix: WriteExample
+version: '${version}'
+
+main: dev.piny.exampleWriteAddon.ExampleWriteAddon
+bootstrapper: dev.piny.exampleWriteAddon.ExampleWriteAddonBootstrap
+loader: dev.piny.exampleWriteAddon.ExampleWriteAddonLoader
+api-version: '26.2'
+load: POSTWORLD
+
+authors: [ Ember <piny.dev> ]
+website: https://github.com/NotPiny/Write-Example-Addon
+
+dependencies:
+  server:
+    Write:
+      load: BEFORE
+      required: true

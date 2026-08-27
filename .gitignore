@@ -1,0 +1,8 @@
+# IDE/Testing
+.idea/
+/.gradle/
+build/
+run/
+
+# KDE
+.directory
